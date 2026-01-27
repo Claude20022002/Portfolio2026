@@ -99,24 +99,21 @@
                 <div class="row gy-4 align-items-center">
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="hero-content">
-                            <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Brandon
-                                    Johnson</span></h1>
+                            <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">KIMFUTA Claudia</span></h1>
                             <h2 data-aos="fade-up" data-aos-delay="300">Creative <span class="typed"
-                                    data-typed-items="UI/UX Designer, Web Developer, Digital Artist, Brand Strategist"></span>
+                                    data-typed-items="Développeur Web & Mobile, React • Node.js, React Native"></span>
                             </h2>
-                            <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</p>
+                            <p data-aos="fade-up" data-aos-delay="400">I turn ideas into reliable and elegant applications. From React on the frontend to Node.js on the backend,
+                                and mobile development with React Native, I build robust projects designed to last and evolve.</p>
                             <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
                                 <a href="{{ route('portfolio') }}" class="btn btn-primary">View My Work</a>
                                 <a href="{{ route('contact') }}" class="btn btn-outline">Get In Touch</a>
                             </div>
                             <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
-                                <a href="#"><i class="bi bi-github"></i></a>
-                                <a href="#"><i class="bi bi-dribbble"></i></a>
+                                <a href="https://www.instagram.com/claudia.lusamote?igsh=bTh2ZzE0Ymppazcz"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/claudia-lusamote-kimfuta-271b512a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://github.com/Claude20022002"><i class="bi bi-github"></i></a>
+                                <a href="https://www.facebook.com/share/1LAWsnW3oS/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
                             </div>
                         </div>
                     </div>
@@ -154,14 +151,14 @@
 
         <div class="container">
             <div class="copyright text-center ">
-                <p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights
+                <p>© 2026<span>Copyright</span> <strong class="px-1 sitename">Claude20022002</strong> <span>All Rights
                         Reserved<br></span></p>
             </div>
             <div class="social-links d-flex justify-content-center">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Claude20022002"><i class="bi bi-github"></i></a>
+                <a href="https://www.facebook.com/share/1LAWsnW3oS/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/claudia.lusamote?igsh=bTh2ZzE0Ymppazcz"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/claudia-lusamote-kimfuta-271b512a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->

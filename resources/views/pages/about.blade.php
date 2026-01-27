@@ -93,7 +93,9 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+        <p>I design and develop scalable web and mobile applications with modern technologies, 
+          combining clean code and thoughtful user experience.
+        </p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -103,12 +105,13 @@
           <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
             <div class="intro-content">
               <span class="eyebrow">Hello there</span>
-              <h2 class="headline">Hi, I'm Brandon - a calm-minded creative developer crafting serene digital journeys</h2>
+              <h2 class="headline">Hi, I’m Kimfuta Claudia, a motivated and detail-oriented Creative Web & Mobile Developer.</h2>
               <p class="lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus. Sed interdum, nunc non feugiat tempor, orci lorem luctus ligula, vitae rutrum nisl lorem non nulla.
+                I design and develop modern, reliable, and scalable applications using React, Node.js, and React Native.
+                My approach combines clean code, solid architecture, and user-focused design to deliver solutions that are both efficient and maintainable.             
               </p>
               <p>
-                Integer posuere lacus in mi fringilla, eget luctus risus pulvinar. Curabitur a arcu a nisl tempus sagittis. Aenean varius, tortor sed porttitor dictum, augue eros viverra lectus, at efficitur magna lacus in risus.
+                Curious by nature and always eager to learn, I enjoy turning ideas into real-world digital products. I’m fully aware of the demands of the tech industry and committed to continuous improvement, teamwork, and delivering value through my work. 
               </p>
 
               <div class="cta-group">
@@ -137,28 +140,28 @@
               <div class="skill-item">
                 <i class="bi bi-layout-text-window"></i>
                 <h3>UI/UX</h3>
-                <p>Vivamus sagittis lacus molestie placerat.</p>
+                <p>Building responsive and dynamic web applications with React, modern JavaScript, and clean UI practices.</p>
               </div>
             </div>
             <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="180">
               <div class="skill-item">
                 <i class="bi bi-code-slash"></i>
-                <h3>React.js</h3>
-                <p>Maecenas pharetra magna sit amet risus.</p>
+                <h3>Backend Development</h3>
+                <p>Designing RESTful APIs and backend logic using Node.js, Express, and databases (SQL & NoSQL).</p>
               </div>
             </div>
             <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="240">
               <div class="skill-item">
-                <i class="bi bi-phone"></i>
-                <h3>Mobile-first</h3>
-                <p>Donec id elit non mi porta gravida.</p>
+                <i class="bi bi-file-code"></i>
+                <h3>Mobile Development</h3>
+                <p>Creating cross-platform mobile applications with React Native, focusing on performance and usability.</p>
               </div>
             </div>
             <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
               <div class="skill-item">
-                <i class="bi bi-camera"></i>
-                <h3>Photography</h3>
-                <p>Aliquam euismod nunc at augue cursus.</p>
+                <i class="bi bi-phone"></i>
+                <h3>Mobile-First & Performance</h3>
+                <p>Developing applications optimized for speed, scalability, and mobile-first experiences.</p>
               </div>
             </div>
           </div>
