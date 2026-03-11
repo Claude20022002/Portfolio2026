@@ -25,6 +25,7 @@
                         Mes projets
                     </a>
                 </li>
+                <!--
                 <li class="dropdown"><a href="#"><span>Mes compétences</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
@@ -44,6 +45,7 @@
                         <li><a href="#">MongoDB</a></li>
                     </ul>
                 </li>
+                -->
                 <li><a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Me
                         contacter</a></li>
             </ul>
