@@ -327,7 +327,7 @@
         <div class="row align-items-center">
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="avatars d-flex align-items-center">
-                    <img src="{{ asset('img/profile/profile-square-11.webp') }}" alt="Claudia LUSAMOTE KIMFUTA"
+                    <img src="{{ asset('img/profile/profile-square-12.webp') }}" alt="Claudia LUSAMOTE KIMFUTA"
                         class="rounded-circle" loading="lazy">
                 </div>
             </div>

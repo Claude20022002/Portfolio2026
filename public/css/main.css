@@ -1239,8 +1239,8 @@ section,
 }
 
 .stats .avatars img {
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   border: 3px solid var(--accent-color);
   margin-right: -15px;
   transition: transform 0.3s ease;

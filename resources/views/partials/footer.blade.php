@@ -2,7 +2,7 @@
 
     <div class="container">
         <div class="copyright text-center ">
-            <p>© 2026<span>Copyright</span> <strong class="px-1 sitename">LK Code</strong> <span>All Rights
+            <p>© 2026 <span>Copyright</span> <strong class="px-1 sitename">LK Code</strong> <span>All Rights
                     Reserved<br></span></p>
         </div>
         <div class="social-links d-flex justify-content-center">
