@@ -185,13 +185,101 @@ $skills = [
     'icon' => 'tailwind.svg',
     ],
 ];
+
+
+
+$certifications = [
+    [
+        "title" => "React Native",
+        "institution" => "Meta",
+        "date" => "Janvier 2026",
+        "certificate" => "/certificates/Coursera-React-Native.pdf",
+    ],
+    [
+        "title" => "Plate-forme de bases de données Oracle",
+        "institution" => "LearnQuest",
+        "date" => "Janvier 2026",
+        "certificate" => "/certificates/Coursera-Oracle-database-platform.pdf",
+    ],
+    [
+        "title" => "Fondamentaux du Project Management",
+        "institution" => "Google",
+        "date" => "Janvier 2026",
+        "certificate" => "/certificates/Coursera-Project-management-foundations.pdf",
+    ],
+    [
+        "title" => "Développement d'applications backend avec Node.js et Express",
+        "institution" => "IBM",
+        "date" => "Avril 2025",
+        "certificate" => "/certificates/Coursera-Developing-back-end-apps-with-nodejs-and-express.pdf",
+    ],
+    [
+        "title" => "React avancé",
+        "institution" => "Meta",
+        "date" => "Avril 2025",
+        "certificate" => "/certificates/Coursera-Advanced-react.pdf",
+    ],
+    [
+        "title" => "Fondations de la programmation avec JavaScript, HTML et CSS",
+        "institution" => "Duke University",
+        "date" => "Février 2025",
+        "certificate" => "/certificates/Coursera-Programming-foundations-with_javascript-html-and-css.pdf",
+    ],
+    [
+        "title" => "Introduction à Java",
+        "institution" => "LearnQuest",
+        "date" => "Décembre 2024",
+        "certificate" => "/certificates/Coursera-Introduction-java.pdf",
+    ],
+    [
+        "title" => "Bases de React",
+        "institution" => "Meta",
+        "date" => "Novembre 2024",
+        "certificate" => "/certificates/Coursera-React-basics.pdf",
+    ],
+    [
+        "title" => "Le langage SQL (Structured Query Language)",
+        "institution" => "University of Colorado Boulder",
+        "date" => "Juin 2024",
+        "certificate" => "/certificates/Coursera-The-structured-query-language-sql.pdf",
+    ],
+    [
+        "title" => "Travailler plus efficacement avec Microsoft Word",
+        "institution" => "Microsoft",
+        "date" => "Juin 2024",
+        "certificate" => "/certificates/Coursera-Work-smarter-with-microsoft-word.pdf",
+    ],
+    [
+        "title" => "Conception de bases de données relationnelles",
+        "institution" => "University of Colorado Boulder",
+        "date" => "Avril 2024",
+        "certificate" => "/certificates/Coursera-Relational-database-design.pdf",
+    ],
+    [
+        "title" => "Introduction à la programmation Python",
+        "institution" => "University of Pennsylvania",
+        "date" => "Janvier 2024",
+        "certificate" => "/certificates/Coursera-Introduction-to-python-programming.pdf",
+    ],
+    [
+        "title" => "Introduction au développement web",
+        "institution" => "University of California, Davis",
+        "date" => "Novembre 2023",
+        "certificate" => "/certificates/Coursera-Introduction-to-web-development.pdf",
+    ],
+];
+
 Route::get('/', fn () => view('pages.index'))->name('home');
 Route::get('/about', function () use ($skills) {
     return view('pages.about', [
         'skills' => $skills
     ]);
 })->name('about');
-Route::get('/resume', fn () => view('pages.resume'))->name('resume');
+Route::get('/resume', function () use ($certifications) {
+    return view('pages.resume', [
+        'certifications' => $certifications
+    ]);
+})->name('resume');
 Route::get('/services', fn () => view('pages.services'))->name('services');
 
 // CORRECTION : passage de $id correctement à la vue

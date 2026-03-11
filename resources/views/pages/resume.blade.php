@@ -155,97 +155,20 @@
                 <div class="resume-item" data-aos="fade-up">
                     <h3 class="resume-title">Certifications</h3>
                     <div class="resume-content row g-3">
-
+                        @isset($certifications)
+                        @foreach ($certifications as $certification)
                         <div class="col-md-6 col-lg-4">
-                            <a href="{{ asset('certificates/Coursera-Introduction-to-web-development.pdf') }}"
-                                target="_blank" class="text-decoration-none">
-                                <article class="education-item">
-                                    <h4>Introduction to Web Development</h4>
-                                    <p class="institution"><em>Coursera</em></p>
-                                </article>
-                            </a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <a href="{{ asset('certificates/Coursera-Programming-foundations-with_javascript-html-and-css.pdf') }}"
-                                target="_blank" class="text-decoration-none">
-                                <article class="education-item">
-                                    <h4>Programming Foundations with JavaScript, HTML and CSS</h4>
-                                    <p class="institution"><em>Coursera</em></p>
-                                </article>
-                            </a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <a href="{{ asset('certificates/Coursera-React-basics.pdf') }}" target="_blank"
+                            <a href="{{ asset($certification['certificate']) }}" target="_blank"
                                 class="text-decoration-none">
                                 <article class="education-item">
-                                    <h4>React Basics</h4>
-                                    <p class="institution"><em>Meta / Coursera</em></p>
+                                    <h4>{{ $certification['title'] }}</h4>
+                                    <p class="institution"><em>{{ $certification['institution'] }}</em></p>
+                                    <p class="date"><em>{{ $certification['date'] }}</em></p>
                                 </article>
                             </a>
                         </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <a href="{{ asset('certificates/Coursera-Advanced-react.pdf') }}" target="_blank"
-                                class="text-decoration-none">
-                                <article class="education-item">
-                                    <h4>Advanced React</h4>
-                                    <p class="institution"><em>Meta / Coursera</em></p>
-                                </article>
-                            </a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <a href="{{ asset('certificates/Coursera-Developing-back-end-apps-with-nodejs-and-express.pdf') }}"
-                                target="_blank" class="text-decoration-none">
-                                <article class="education-item">
-                                    <h4>Developing Back-End Apps with Node.js and Express</h4>
-                                    <p class="institution"><em>IBM / Coursera</em></p>
-                                </article>
-                            </a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <a href="{{ asset('certificates/Coursera-The-structured-query-language-sql.pdf') }}"
-                                target="_blank" class="text-decoration-none">
-                                <article class="education-item">
-                                    <h4>The Structured Query Language (SQL)</h4>
-                                    <p class="institution"><em>Coursera</em></p>
-                                </article>
-                            </a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <a href="{{ asset('certificates/Coursera-Relational-database-design.pdf') }}"
-                                target="_blank" class="text-decoration-none">
-                                <article class="education-item">
-                                    <h4>Relational Database Design</h4>
-                                    <p class="institution"><em>Coursera</em></p>
-                                </article>
-                            </a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <a href="{{ asset('certificates/Coursera-Introduction-to-python-programming.pdf') }}"
-                                target="_blank" class="text-decoration-none">
-                                <article class="education-item">
-                                    <h4>Introduction to Python Programming</h4>
-                                    <p class="institution"><em>Coursera</em></p>
-                                </article>
-                            </a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4">
-                            <a href="{{ asset('certificates/Coursera-Work-smarter-with-microsoft-word.pdf') }}"
-                                target="_blank" class="text-decoration-none">
-                                <article class="education-item">
-                                    <h4>Work Smarter with Microsoft Word</h4>
-                                    <p class="institution"><em>Coursera</em></p>
-                                </article>
-                            </a>
-                        </div>
-
+                        @endforeach
+                        @endisset
                         <div class="col-12">
                             <p class="mt-2">
                                 + d'autres certifications (réseaux, data, gestion de projet…) complètent ce parcours et
