@@ -1,198 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
+@section('title', 'Accueil')
+@section('description', 'Accueil')
+@section('keywords', 'Accueil')
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - FolioOne Bootstrap Template</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+@section('content')
 
-    <!-- Favicons -->
-    <link href="{{ asset('img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+<!-- Hero Section -->
+<section id="hero" class="hero section">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- Vendor CSS Files -->
-    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-
-    <!-- Main CSS File -->
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-    <header id="header" class="header d-flex align-items-center light-background sticky-top">
-        <div class="container position-relative d-flex align-items-center justify-content-between">
-
-            <!-- <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="{{ asset('img/logo.webp') }}" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
-
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="{{ route('home') }}" class="active">Home</a></li>
-                    <li><a href="{{ route('about') }}">About</a></li>
-                    <li><a href="{{ route('resume') }}">Resume</a></li>
-                    <li><a href="{{ route('services') }}">Services</a></li>
-                    <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{{ route('contact') }}">Contact</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-
-            <div class="header-social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-
-        </div>
-    </header>
-
-    <main class="main">
-
-        <!-- Hero Section -->
-        <section id="hero" class="hero section">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row gy-4 align-items-center">
-                    <div class="col-lg-6 order-2 order-lg-1">
-                        <div class="hero-content">
-                            <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">KIMFUTA Claudia</span></h1>
-                            <h2 data-aos="fade-up" data-aos-delay="300">Creative <span class="typed"
-                                    data-typed-items="Développeur Web & Mobile, React • Node.js, React Native"></span>
-                            </h2>
-                            <p data-aos="fade-up" data-aos-delay="400">I turn ideas into reliable and elegant applications. From React on the frontend to Node.js on the backend,
-                                and mobile development with React Native, I build robust projects designed to last and evolve.</p>
-                            <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-                                <a href="{{ route('portfolio') }}" class="btn btn-primary">View My Work</a>
-                                <a href="{{ route('contact') }}" class="btn btn-outline">Get In Touch</a>
-                            </div>
-                            <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-                                <a href="https://www.instagram.com/claudia.lusamote?igsh=bTh2ZzE0Ymppazcz"><i class="bi bi-instagram"></i></a>
-                                <a href="https://www.linkedin.com/in/claudia-lusamote-kimfuta-271b512a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
-                                <a href="https://github.com/Claude20022002"><i class="bi bi-github"></i></a>
-                                <a href="https://www.facebook.com/share/1LAWsnW3oS/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
-                            </div>
-                        </div>
+        <div class="row gy-4 align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="hero-content">
+                    <h1 data-aos="fade-up" data-aos-delay="200">je suis <span class="highlight">KIMFUTA
+                            Claudia</span></h1>
+                    <h2 data-aos="fade-up" data-aos-delay="300">Développeur Web & Mobile <span class="typed"
+                            data-typed-items="React • Node.js, React Native"></span>
+                    </h2>
+                    <p data-aos="fade-up" data-aos-delay="400">Je transforme des idées en applications fiables
+                        et élégantes. De React sur le frontend à Node.js sur le backend, et le développement
+                        mobile avec React Native, je construis des projets robustes conçus pour durer et
+                        évoluer.</p>
+                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                        <a href="{{ route('portfolio') }}" class="btn btn-primary">Voir mes travaux</a>
+                        <a href="{{ route('contact') }}" class="btn btn-outline">Me contacter</a>
                     </div>
-                    <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="image-wrapper">
-                                <img src="{{ asset('img/profile/profile-square-11.webp') }}" alt="Sarah Mitchell"
-                                    class="img-fluid">
-                                <div class="floating-elements">
-                                    <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
-                                        <i class="bi bi-palette"></i>
-                                        <span>Design</span>
-                                    </div>
-                                    <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
-                                        <i class="bi bi-code-slash"></i>
-                                        <span>Code</span>
-                                    </div>
-                                    <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
-                                        <i class="bi bi-lightbulb"></i>
-                                        <span>Ideas</span>
-                                    </div>
-                                </div>
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="600">
+                        <a href="https://www.instagram.com/claudia.lusamote?igsh=bTh2ZzE0Ymppazcz"><i
+                                class="bi bi-instagram"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/claudia-lusamote-kimfuta-271b512a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Claude20022002"><i class="bi bi-github"></i></a>
+                        <a href="https://www.facebook.com/share/1LAWsnW3oS/?mibextid=wwXIfr"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="image-wrapper">
+                        <img src="{{ asset('img/profile/profile-square-11.webp') }}" alt="Sarah Mitchell"
+                            class="img-fluid">
+                        <div class="floating-elements">
+                            <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
+                                <i class="bi bi-braces-asterisk"></i>
+                                <span>Développement</span>
+                            </div>
+                            <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
+                                <i class="bi bi-palette"></i>
+                                <span>Design</span>
+                            </div>
+                            <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
+                                <i class="bi bi-lightbulb"></i>
+                                <span>Idées</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
-
-        </section><!-- /Hero Section -->
-
-    </main>
-
-    <footer id="footer" class="footer">
-
-        <div class="container">
-            <div class="copyright text-center ">
-                <p>© 2026<span>Copyright</span> <strong class="px-1 sitename">Claude20022002</strong> <span>All Rights
-                        Reserved<br></span></p>
-            </div>
-            <div class="social-links d-flex justify-content-center">
-                <a href="https://github.com/Claude20022002"><i class="bi bi-github"></i></a>
-                <a href="https://www.facebook.com/share/1LAWsnW3oS/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/claudia.lusamote?igsh=bTh2ZzE0Ymppazcz"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/claudia-lusamote-kimfuta-271b512a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
-            </div>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you've purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
         </div>
 
-    </footer>
+    </div>
 
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-
-    <!-- Preloader -->
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
-    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('vendor/php-email-form/validate.js') }}"></script>
-    <script src="{{ asset('vendor/aos/aos.js') }}"></script>
-    <script src="{{ asset('vendor/typed.js/typed.umd.js') }}"></script>
-    <script src="{{ asset('vendor/waypoints/noframework.waypoints.js') }}"></script>
-    <script src="{{ asset('vendor/purecounter/purecounter_vanilla.js') }}"></script>
-    <script src="{{ asset('vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('vendor/glightbox/js/glightbox.min.js') }}"></script>
-
-    <!-- Main JS File -->
-    <script src="{{ asset('js/main.js') }}"></script>
-
-</body>
-
-</html>
+</section><!-- /Hero Section -->
+@endsection

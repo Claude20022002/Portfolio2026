@@ -1,532 +1,462 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
+@section('title', 'A propos')
+@section('description', 'A propos')
+@section('keywords', 'A propos')
+@section('content')
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - FolioOne Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+<!-- About Section -->
+<section id="about" class="about section">
 
-  <!-- Favicons -->
-  <link href="{{ asset('img/favicon.png') }}" rel="icon">
-  <link href="{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>A propos</h2>
+        <p>Développeuse web & technicienne réseaux junior, déterminée, sérieuse et autonome, prête à devenir un
+            élément moteur au sein de votre structure.</p>
+    </div><!-- End Section Title -->
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{ asset('vendor/aos/aos.css') }}" rel="stylesheet">
-  <link href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="about-page">
-
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-
-      <!-- <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="{{ asset('img/logo.webp') }}" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="{{ route('home') }}">Home</a></li>
-          <li><a href="{{ route('about') }}" class="active">About</a></li>
-          <li><a href="{{ route('resume') }}">Resume</a></li>
-          <li><a href="{{ route('services') }}">Services</a></li>
-          <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="{{ route('contact') }}">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>I design and develop scalable web and mobile applications with modern technologies, 
-          combining clean code and thoughtful user experience.
-        </p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <!-- Intro + Photo -->
         <div class="row align-items-center justify-content-between gy-5 mb-5">
-          <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
-            <div class="intro-content">
-              <span class="eyebrow">Hello there</span>
-              <h2 class="headline">Hi, I’m Kimfuta Claudia, a motivated and detail-oriented Creative Web & Mobile Developer.</h2>
-              <p class="lead">
-                I design and develop modern, reliable, and scalable applications using React, Node.js, and React Native.
-                My approach combines clean code, solid architecture, and user-focused design to deliver solutions that are both efficient and maintainable.             
-              </p>
-              <p>
-                Curious by nature and always eager to learn, I enjoy turning ideas into real-world digital products. I’m fully aware of the demands of the tech industry and committed to continuous improvement, teamwork, and delivering value through my work. 
-              </p>
+            <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
+                <div class="intro-content">
+                    <span class="eyebrow">Bonjour</span>
+                    <h2 class="headline">Bonjour, je suis LUSAMOTE KIMFUTA Claudia, développeuse web &
+                        technicienne réseaux junior.</h2>
+                    <p class="lead">
+                        Je conçois et développe des applications modernes, fiables et évolutives en utilisant
+                        React, Node.js, React Native et Laravel. Mon objectif est de transformer des idées en
+                        expériences numériques utiles et accessibles.
+                    </p>
+                    <p>
+                        « Déterminée, sérieuse, autonome et consciente du travail qui m'attend, je suis
+                        persuadée
+                        que je serais un élément moteur au sein de votre structure ! »
+                    </p>
 
-              <div class="cta-group">
-                <a href="#portfolio" class="btn-ghost">
-                  View My Work <i class="bi bi-arrow-up-right"></i>
-                </a>
-                <a href="#" class="link-underline">
-                  Download Resume <i class="bi bi-download"></i>
-                </a>
-              </div>
+                    <div class="cta-group">
+                        <a href="{{ route('portfolio') }}"
+                            class="{{ request()->routeIs('portfolio') ? 'active' : '' }} btn-ghost">
+                            Voir mes travaux <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <a href="{{ asset('others/Curriculum-Vitae.pdf') }}" class="link-underline" target="_blank">
+                            Télécharger mon curriculum vitae <i class="bi bi-download"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250">
-            <figure class="profile-figure text-center text-lg-end">
-              <img src="{{ asset('img/profile/profile-square-11.webp') }}" alt="Portrait of Alex" class="img-fluid profile-photo">
-            </figure>
-          </div>
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250">
+                <figure class="profile-figure text-center text-lg-end">
+                    <img src="{{ asset('img/profile/profile-square-11.webp') }}" alt="Portrait of Alex"
+                        class="img-fluid profile-photo">
+                </figure>
+            </div>
         </div>
         <!-- End Intro + Photo -->
 
         <!-- Skills Grid -->
         <div class="mb-5">
-          <div class="row g-4">
-            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="120">
-              <div class="skill-item">
-                <i class="bi bi-layout-text-window"></i>
-                <h3>UI/UX</h3>
-                <p>Building responsive and dynamic web applications with React, modern JavaScript, and clean UI practices.</p>
-              </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+                    <div class="skill-item">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>Développement</h3>
+                        <p>Python, Java, PHP, JavaScript, React, React Native, Laravel.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+                    <div class="skill-item">
+                        <i class="bi bi-database"></i>
+                        <h3>Bases de données</h3>
+                        <p>MySQL, Oracle, Microsoft Access, MongoDB.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                    <div class="skill-item">
+                        <i class="bi bi-tools"></i>
+                        <h3>Outils</h3>
+                        <p>VS Code, Postman, Cisco Packet Tracer, LaTeX, Word.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-item">
+                        <i class="bi bi-clipboard-data"></i>
+                        <h3>Soft skills</h3>
+                        <p>Autonomie, curiosité, travail en équipe, capacité à apprendre vite.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="180">
-              <div class="skill-item">
-                <i class="bi bi-code-slash"></i>
-                <h3>Backend Development</h3>
-                <p>Designing RESTful APIs and backend logic using Node.js, Express, and databases (SQL & NoSQL).</p>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="240">
-              <div class="skill-item">
-                <i class="bi bi-file-code"></i>
-                <h3>Mobile Development</h3>
-                <p>Creating cross-platform mobile applications with React Native, focusing on performance and usability.</p>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <div class="skill-item">
-                <i class="bi bi-phone"></i>
-                <h3>Mobile-First & Performance</h3>
-                <p>Developing applications optimized for speed, scalability, and mobile-first experiences.</p>
-              </div>
-            </div>
-          </div>
         </div>
         <!-- End Skills Grid -->
 
+        <!-- Tech Icons -->
+        <div class="mb-5">
+            <div class="row g-3 justify-content-center align-items-center">
+                @isset($skills)
+
+                @foreach ($skills as $skill)
+                <div class="col-3 col-md-2 col-lg-1 text-center" data-aos="fade-up" data-aos-delay="120">
+                    <img src="{{ asset('assets/svg/' . $skill['icon']) }}" alt="{{ $skill['name'] }}" class="img-fluid"
+                        title="{{ $skill['name'] }}" />
+                </div>
+                @endforeach
+                @endisset
+            </div>
+        </div>
+        <!-- End Tech Icons -->
+
         <!-- Journey Timeline -->
         <div class="mb-5">
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
-              <article class="timeline-item">
-                <span class="dot"></span>
-                <time>2018</time>
-                <h4>B.A. in Design</h4>
-                <p>Quisque euismod turpis ut sapien luctus bibendum.</p>
-              </article>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+                    <article class="timeline-item">
+                        <span class="dot"></span>
+                        <time>2021 – 2022</time>
+                        <h4>Bac Scientifique</h4>
+                        <p>Obtention du Baccalauréat Scientifique option Mathématiques au Lycée d'État au Gabon.</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+                    <article class="timeline-item">
+                        <span class="dot"></span>
+                        <time>2023 – 2025</time>
+                        <h4>Prépa Ingénierie Informatique</h4>
+                        <p>Formation en ingénierie informatique à HESTIM Casablanca. Membre actif du club HIC Code
+                            Masters
+                            et réalisation de nombreux projets.</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                    <article class="timeline-item">
+                        <span class="dot"></span>
+                        <time>Juillet 2025</time>
+                        <h4>Stage Robotique – HESTIM FabLab</h4>
+                        <p>Déploiement d'un système robotique collaboratif avec vision IA. Mise en service de MyCobot280
+                            pi
+                            et UltraArm P340.</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <article class="timeline-item">
+                        <span class="dot"></span>
+                        <time>2025 – 2026</time>
+                        <h4>Cycle Ingénieur d'État</h4>
+                        <p>1ère année du cycle Ingénieur d'État à HESTIM Casablanca, en parallèle d'une mission de
+                            support
+                            informatique et logistique chez Ambition 28.</p>
+                    </article>
+                </div>
             </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
-              <article class="timeline-item">
-                <span class="dot"></span>
-                <time>2020</time>
-                <h4>Freelance Start</h4>
-                <p>Mauris non arcu non urna convallis vulputate.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
-              <article class="timeline-item">
-                <span class="dot"></span>
-                <time>2022</time>
-                <h4>Joined Creative Studio</h4>
-                <p>Nunc sed nibh et libero fermentum posuere.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <article class="timeline-item">
-                <span class="dot"></span>
-                <time>2024</time>
-                <h4>Lead Frontend</h4>
-                <p>Proin commodo massa sit amet urna pretium.</p>
-              </article>
-            </div>
-          </div>
         </div>
         <!-- End Journey Timeline -->
 
         <!-- Quote -->
         <blockquote class="personal-quote text-center mb-5" data-aos="fade-down" data-aos-delay="200">
-          <p>"Building clean and meaningful experiences through thoughtful code and quiet design."</p>
+            <p>Construire des expériences claires et significatives grâce à un code réfléchi et un design discret.
+            </p>
         </blockquote>
         <!-- End Quote -->
 
         <!-- Fun Facts -->
         <div class="row g-3 justify-content-center">
-          <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="120">
-            <div class="fact-pill">
-              <i class="bi bi-magic"></i>
-              <span>Minimalism</span>
+            <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="120">
+                <div class="fact-pill">
+                    <i class="bi bi-magic"></i>
+                    <span>Minimalism</span>
+                </div>
             </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="160">
-            <div class="fact-pill">
-              <i class="bi bi-headphones"></i>
-              <span>Lo-fi Beats</span>
+            <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="160">
+                <div class="fact-pill">
+                    <i class="bi bi-headphones"></i>
+                    <span>Lo-fi Beats</span>
+                </div>
             </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
-            <div class="fact-pill">
-              <i class="bi bi-geo-alt"></i>
-              <span>City Walks</span>
+            <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+                <div class="fact-pill">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>City Walks</span>
+                </div>
             </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="240">
-            <div class="fact-pill">
-              <i class="bi bi-brush"></i>
-              <span>Sketching</span>
+            <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="240">
+                <div class="fact-pill">
+                    <i class="bi bi-brush"></i>
+                    <span>Sketching</span>
+                </div>
             </div>
-          </div>
         </div>
         <!-- End Fun Facts -->
 
-      </div>
+    </div>
 
-    </section><!-- /About Section -->
+</section><!-- /About Section -->
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
+<!-- Skills Section -->
+<section id="skills" class="skills section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
-      </div><!-- End Section Title -->
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut
+            perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem
+            aperiam</p>
+    </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row g-4 skills-animation">
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="skill-box">
-              <h3>HTML</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-              <span class="text-end d-block">90%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-box">
-              <h3>CSS</h3>
-              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
-              <span class="text-end d-block">90%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box">
-              <h3>JavaScript</h3>
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor.</p>
-              <span class="text-end d-block">80%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="skill-box">
-              <h3>Photoshop</h3>
-              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate.</p>
-              <span class="text-end d-block">55%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-box">
+                    <h3>HTML</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                    <span class="text-end d-block">90%</span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-box">
+                    <h3>CSS</h3>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+                    <span class="text-end d-block">90%</span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-box">
+                    <h3>JavaScript</h3>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor.</p>
+                    <span class="text-end d-block">80%</span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill-box">
+                    <h3>Photoshop</h3>
+                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate.</p>
+                    <span class="text-end d-block">55%</span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                            aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section dark-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="avatars d-flex align-items-center">
-              <img src="{{ asset('img/person/person-m-2.webp') }}" alt="Avatar 1" class="rounded-circle" loading="lazy">
-              <img src="{{ asset('img/person/person-m-3.webp') }}" alt="Avatar 2" class="rounded-circle" loading="lazy">
-              <img src="{{ asset('img/person/person-f-5.webp') }}" alt="Avatar 3" class="rounded-circle" loading="lazy">
-              <img src="{{ asset('img/person/person-m-5.webp') }}" alt="Avatar 4" class="rounded-circle" loading="lazy">
-            </div>
-          </div>
-
-          <div class="col-lg-8">
-            <div class="row counters">
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <h2><span data-purecounter-start="0" data-purecounter-end="185" data-purecounter-duration="1" class="purecounter"></span>+</h2>
-                <p>Nemo enim ipsam</p>
-              </div>
-
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                <h2><span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>K</h2>
-                <p>Voluptatem sequi</p>
-              </div>
-
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-                <h2><span data-purecounter-start="0" data-purecounter-end="128" data-purecounter-duration="1" class="purecounter"></span>+</h2>
-                <p>Dolor sit consectetur</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="{{ asset('img/person/person-m-9.webp') }}" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="{{ asset('img/person/person-f-5.webp') }}" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="{{ asset('img/person/person-f-12.webp') }}" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="{{ asset('img/person/person-m-12.webp') }}" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-  </main>
-
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights Reserved<br></span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
     </div>
 
-  </footer>
+</section><!-- /Skills Section -->
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Stats Section -->
+<section id="stats" class="stats section dark-background">
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-  <!-- Vendor JS Files -->
-  <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('vendor/php-email-form/validate.js') }}"></script>
-  <script src="{{ asset('vendor/aos/aos.js') }}"></script>
-  <script src="{{ asset('vendor/typed.js/typed.umd.js') }}"></script>
-  <script src="{{ asset('vendor/waypoints/noframework.waypoints.js') }}"></script>
-  <script src="{{ asset('vendor/purecounter/purecounter_vanilla.js') }}"></script>
-  <script src="{{ asset('vendor/swiper/swiper-bundle.min.js') }}"></script>
-  <script src="{{ asset('vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
-  <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-  <script src="{{ asset('vendor/glightbox/js/glightbox.min.js') }}"></script>
+        <div class="row align-items-center">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="avatars d-flex align-items-center">
+                    <img src="{{ asset('img/person/person-m-2.webp') }}" alt="Avatar 1" class="rounded-circle"
+                        loading="lazy">
+                    <img src="{{ asset('img/person/person-m-3.webp') }}" alt="Avatar 2" class="rounded-circle"
+                        loading="lazy">
+                    <img src="{{ asset('img/person/person-f-5.webp') }}" alt="Avatar 3" class="rounded-circle"
+                        loading="lazy">
+                    <img src="{{ asset('img/person/person-m-5.webp') }}" alt="Avatar 4" class="rounded-circle"
+                        loading="lazy">
+                </div>
+            </div>
 
-  <!-- Main JS File -->
-  <script src="{{ asset('js/main.js') }}"></script>
+            <div class="col-lg-8">
+                <div class="row counters">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <h2><span data-purecounter-start="0" data-purecounter-end="185" data-purecounter-duration="1"
+                                class="purecounter"></span>+</h2>
+                        <p>Nemo enim ipsam</p>
+                    </div>
 
-</body>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <h2><span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
+                                class="purecounter"></span>K</h2>
+                        <p>Voluptatem sequi</p>
+                    </div>
 
-</html>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+                        <h2><span data-purecounter-start="0" data-purecounter-end="128" data-purecounter-duration="1"
+                                class="purecounter"></span>+</h2>
+                        <p>Dolor sit consectetur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section><!-- /Stats Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+            {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                    "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                }
+            }
+            </script>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="testimonial-content">
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora
+                                            entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam
+                                            eget nibh et. Maecen aliquam, risus at semper.</span>
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                    <h3>Saul Goodman</h3>
+                                    <h4>Ceo &amp; Founder</h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="{{ asset('img/person/person-m-9.webp') }}" class="img-fluid testimonial-img"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="testimonial-content">
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <span>Export tempor illum tamen malis malis eram quae irure esse labore
+                                            quem cillum quid cillum eram malis quorum velit fore eram velit sunt
+                                            aliqua noster fugiat irure amet legam anim culpa.</span>
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                    <h3>Sara Wilsson</h3>
+                                    <h4>Designer</h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="{{ asset('img/person/person-f-5.webp') }}" class="img-fluid testimonial-img"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="testimonial-content">
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <span>Enim nisi quem export duis labore cillum quae magna enim sint
+                                            quorum nulla quem veniam duis minim tempor labore quem eram duis
+                                            noster aute amet eram fore quis sint minim.</span>
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                    <h3>Jena Karlis</h3>
+                                    <h4>Store Owner</h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="{{ asset('img/person/person-f-12.webp') }}" class="img-fluid testimonial-img"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="testimonial-content">
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                                            export minim fugiat minim velit minim dolor enim duis veniam ipsum
+                                            anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                    <h3>John Larson</h3>
+                                    <h4>Entrepreneur</h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="{{ asset('img/person/person-m-12.webp') }}" class="img-fluid testimonial-img"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End testimonial item -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+</section><!-- /Testimonials Section -->
+
+@endsection

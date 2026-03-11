@@ -1,250 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
+@section('title', 'Me contacter')
+@section('description', 'Me contacter')
+@section('keywords', 'Me contacter')
+@section('content')
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Contact - FolioOne Bootstrap Template</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+<!-- Contact Section -->
+<section id="contact" class="contact section">
 
-    <!-- Favicons -->
-    <link href="{{ asset('img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Me contacter</h2>
+        <p>Vous avez un projet, une idée ou une opportunité de collaboration&nbsp;? Écrivez‑moi, je vous répondrai avec
+            plaisir.</p>
+    </div><!-- End Section Title -->
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- Vendor CSS Files -->
-    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+        <div class="row g-4 g-lg-5">
+            <div class="col-lg-5">
+                <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Mes coordonnées</h3>
+                    <p>Basée à Casablanca, je suis disponible pour des projets à distance ou en présentiel.</p>
 
-    <!-- Main CSS File -->
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+                    <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Localisation</h4>
+                            <p>Bd Ghandi</p>
+                            <p>Casablanca, Maroc</p>
+                        </div>
+                    </div>
 
-    <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+                    <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon-box">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Téléphone</h4>
+                            <p>+212 775-127-274</p>
+                        </div>
+                    </div>
 
-<body class="contact-page">
-
-    <header id="header" class="header d-flex align-items-center light-background sticky-top">
-        <div class="container position-relative d-flex align-items-center justify-content-between">
-
-            <!-- <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="{{ asset('img/logo.webp') }}" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
-
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="{{ route('about') }}">About</a></li>
-                    <li><a href="{{ route('resume') }}">Resume</a></li>
-                    <li><a href="{{ route('services') }}">Services</a></li>
-                    <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{{ route('contact') }}" class="active">Contact</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-
-            <div class="header-social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon-box">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Email</h4>
+                            <p>cl.lusamote@hestim.ma</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </div>
-    </header>
+            <div class="col-lg-7">
+                <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Envoyer un message</h3>
+                    <p>Remplissez ce formulaire pour me décrire brièvement votre besoin (type de projet, délais,
+                        contexte, etc.).</p>
 
-    <main class="main">
+                    <form action="{{ route('contact.submit') }}" method="post" class="php-email-form" data-aos="fade-up"
+                        data-aos-delay="200">
+                        @csrf
+                        <div class="row gy-4">
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Contact</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut
-                    perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem
-                    aperiam</p>
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row g-4 g-lg-5">
-                    <div class="col-lg-5">
-                        <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-                            <h3>Contact Info</h3>
-                            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante
-                                ipsum primis.</p>
-
-                            <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                                <div class="icon-box">
-                                    <i class="bi bi-geo-alt"></i>
-                                </div>
-                                <div class="content">
-                                    <h4>Our Location</h4>
-                                    <p>A108 Adam Street</p>
-                                    <p>New York, NY 535022</p>
-                                </div>
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Votre nom" required="">
                             </div>
 
-                            <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                                <div class="icon-box">
-                                    <i class="bi bi-telephone"></i>
-                                </div>
-                                <div class="content">
-                                    <h4>Phone Number</h4>
-                                    <p>+1 5589 55488 55</p>
-                                    <p>+1 6678 254445 41</p>
-                                </div>
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Votre email"
+                                    required="">
                             </div>
 
-                            <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-                                <div class="icon-box">
-                                    <i class="bi bi-envelope"></i>
-                                </div>
-                                <div class="content">
-                                    <h4>Email Address</h4>
-                                    <p>info@example.com</p>
-                                    <p>contact@example.com</p>
-                                </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Sujet" required="">
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-7">
-                        <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-                            <h3>Get In Touch</h3>
-                            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante
-                                ipsum primis.</p>
+                            <div class="col-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Votre message"
+                                    required=""></textarea>
+                            </div>
 
-                            <form action="{{ route('contact.submit') }}" method="post" class="php-email-form"
-                                data-aos="fade-up" data-aos-delay="200">
-                                @csrf
-                                <div class="row gy-4">
+                            <div class="col-12 text-center">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                                    <div class="col-md-6">
-                                        <input type="text" name="name" class="form-control" placeholder="Your Name"
-                                            required="">
-                                    </div>
-
-                                    <div class="col-md-6 ">
-                                        <input type="email" class="form-control" name="email" placeholder="Your Email"
-                                            required="">
-                                    </div>
-
-                                    <div class="col-12">
-                                        <input type="text" class="form-control" name="subject" placeholder="Subject"
-                                            required="">
-                                    </div>
-
-                                    <div class="col-12">
-                                        <textarea class="form-control" name="message" rows="6" placeholder="Message"
-                                            required=""></textarea>
-                                    </div>
-
-                                    <div class="col-12 text-center">
-                                        <div class="loading">Loading</div>
-                                        <div class="error-message"></div>
-                                        <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                        <button type="submit" class="btn">Send Message</button>
-                                    </div>
-
-                                </div>
-                            </form>
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
 
                         </div>
-                    </div>
+                    </form>
 
                 </div>
-
             </div>
 
-        </section><!-- /Contact Section -->
-
-    </main>
-
-    <footer id="footer" class="footer">
-
-        <div class="container">
-            <div class="copyright text-center ">
-                <p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights
-                        Reserved<br></span></p>
-            </div>
-            <div class="social-links d-flex justify-content-center">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you've purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
         </div>
 
-    </footer>
+    </div>
 
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+</section><!-- /Contact Section -->
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
-    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('vendor/php-email-form/validate.js') }}"></script>
-    <script src="{{ asset('vendor/aos/aos.js') }}"></script>
-    <script src="{{ asset('vendor/typed.js/typed.umd.js') }}"></script>
-    <script src="{{ asset('vendor/waypoints/noframework.waypoints.js') }}"></script>
-    <script src="{{ asset('vendor/purecounter/purecounter_vanilla.js') }}"></script>
-    <script src="{{ asset('vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('vendor/glightbox/js/glightbox.min.js') }}"></script>
-
-    <!-- Main JS File -->
-    <script src="{{ asset('js/main.js') }}"></script>
-
-</body>
-
-</html>
+@endsection
