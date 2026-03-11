@@ -1,0 +1,27 @@
+# Étape 1 : Base PHP avec Apache
+FROM php:8.3-apache
+
+# Installer les extensions nécessaires
+RUN apt-get update && apt-get install -y \
+    libzip-dev \
+    unzip \
+    git \
+    && docker-php-ext-install pdo pdo_mysql zip
+
+# Installer Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Copier le projet
+COPY . /var/www/html/
+
+# Installer les dépendances PHP
+RUN composer install --no-dev --optimize-autoloader
+
+# Configurer les permissions pour Laravel
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+
+# Exposer le port attendu par Render
+EXPOSE 10000
+
+# Commande pour lancer Apache
+CMD ["apache2-foreground"]
