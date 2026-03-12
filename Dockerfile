@@ -27,12 +27,18 @@ COPY . .
 RUN composer install --optimize-autoloader --no-dev
 RUN npm install && npm run build
 
+# Vider les caches compilés sous Windows
+RUN php artisan view:clear
+RUN php artisan cache:clear
+RUN php artisan config:clear
+
 RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 RUN chmod -R 775 /var/www/storage /var/www/bootstrap/cache
 
 COPY docker/nginx.conf /etc/nginx/nginx.conf
 COPY docker/supervisord.conf /etc/supervisord.conf
+COPY docker/php-fpm.conf /usr/local/etc/php-fpm.d/www.conf
 
 EXPOSE 8080
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+ENTRYPOINT ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
